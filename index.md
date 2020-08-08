@@ -520,7 +520,7 @@ Other Style Guides
   <a name="destructuring--object"></a>
   - [5.1](#destructuring--object) 用对象的解构赋值来获取和使用对象某个或多个属性值。 eslint: [`prefer-destructuring`](https://eslint.org/docs/rules/prefer-destructuring)
 
-    > Why? 解构保存了这些属性的临时值/引用
+    > Why? 解构使您不必为这些属性创建临时引用
 
     ```javascript
     // bad
@@ -560,7 +560,7 @@ Other Style Guides
 
   <a name="5.3"></a>
   <a name="destructuring--object-over-array"></a>
-  - [5.3](#destructuring--object-over-array) 多个返回值用对象的解构，而不是数据解构。
+  - [5.3](#destructuring--object-over-array) 多个返回值用对象的解构，而不是数组解构。
 
     > Why? 你可以在后期添加新的属性或者变换变量的顺序而不会打破原有的调用
 
