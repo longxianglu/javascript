@@ -3553,7 +3553,7 @@ Other Style Guides
 
     // ---
 
-    // bad - 不必要的大写键，没有增加任何语言
+    // bad - 不必要的大写键，没有增加任何语义
     export const MAPPING = {
       KEY: 'value'
     };
