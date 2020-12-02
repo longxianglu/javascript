@@ -2415,7 +2415,7 @@ Other Style Guides
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#目录)**
 
 ## Comments
 
@@ -3671,7 +3671,7 @@ Other Style Guides
     });
     ```
 
-  **[⬆ back to top](#目录)**
+**[⬆ back to top](#目录)**
 
 
 ## jQuery
@@ -4045,7 +4045,7 @@ Other Style Guides
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#目录)**
 
 ## Translation
 
@@ -4105,7 +4105,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#目录)**
 
 ## Amendments
 
