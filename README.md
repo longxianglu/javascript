@@ -275,7 +275,7 @@ Other Style Guides
   <a name="objects--quoted-props"></a>
   - [3.6](#objects--quoted-props) 只对那些无效的标示使用引号 `''`. eslint: [`quote-props`](http://eslint.org/docs/rules/quote-props.html)
 
-    > Why? 通常我们认为这种方式主观上易读。他优化了代码高亮，并且页更容易被许多JS引擎压缩。
+    > Why? 通常我们认为这种方式主观上易读。他优化了代码高亮，并且也更容易被许多JS引擎压缩。
 
     ```javascript
     // bad
