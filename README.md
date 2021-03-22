@@ -71,11 +71,11 @@
     + `boolean`
     + `null`
     + `undefined`
-+ `symbol`
+    + `symbol`
     + `bigint`
     
     ```javascript
-const foo = 1;
+    const foo = 1;
     let bar = foo;
 
     bar = 9;
@@ -91,15 +91,13 @@ const foo = 1;
     
     + `object`
     + `array`
-+ `function`
+    + `function`
   
     ```javascript
     const foo = [1, 2];
-const bar = foo;
-    
-    ```
+    const bar = foo;
 
-bar[0] = 9;
+    bar[0] = 9;
     
     console.log(foo[0], bar[0]); // => 9, 9
     ```
