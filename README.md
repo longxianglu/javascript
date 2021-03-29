@@ -65,7 +65,7 @@
   <a name="types--primitives"></a>
 
   - [1.1](#types--primitives) 基本类型: 你可以直接获取到基本类型的值
-    
+
     + `string`
     + `number`
     + `boolean`
@@ -73,13 +73,13 @@
     + `undefined`
     + `symbol`
     + `bigint`
-    
+
     ```javascript
     const foo = 1;
     let bar = foo;
 
     bar = 9;
-    
+
     console.log(foo, bar); // => 1, 9
     ```
     + 由于 Symbols 和 BigInts 不能被正确的 polyfill。所以不应在不能原生支持这些类型的环境或浏览器中使用他们。
@@ -88,17 +88,17 @@
   <a name="types--complex"></a>
 
   - [1.2](#types--complex)  复杂类型: 复杂类型赋值是获取到他的引用的值。
-    
+
     + `object`
     + `array`
     + `function`
-  
+
     ```javascript
     const foo = [1, 2];
     const bar = foo;
 
     bar[0] = 9;
-    
+
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
@@ -624,7 +624,7 @@
   <a name="strings--line-length"></a>
 
   - [6.2](#strings--line-length) 超过 100 个字符的字符串不应该用字符串连接成多行。
-    
+
 > 为什么？字符串折行增加编写难度且不易被搜索。
 
     ```javascript
@@ -633,12 +633,12 @@
     of Batman. When you stop to think about how Batman had anything to do \
     with this, you would get nowhere \
 fast.';
-    
+
     // bad
     const errorMessage = 'This is a super long error that was thrown because ' +
       'of Batman. When you stop to think about how Batman had anything to do ' +
   'with this, you would get nowhere fast.';
-    
+
     // good
     const errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
     ```
@@ -717,12 +717,12 @@ fast.';
     function foo() {
       // ...
     }
-    
+
 // bad
     const foo = function () {
       // ...
     };
-    
+
 // good
     // lexical name distinguished from the variable-referenced invocation(s)
     // 函数表达式名和声明的函数名是不一样的
@@ -1076,7 +1076,7 @@ fast.';
 
     // bad
     foo(() => bool = true);
-    
+
     ```
 
 // good
@@ -1132,7 +1132,7 @@ fast.';
     [1, 2, 3].map((number) => (
       `A long string with the ${number}. It’s so long that we don’t want it to take up space on the .map line!`
     ));
-    
+
     ```
 
 // bad
@@ -1140,7 +1140,7 @@ fast.';
       const y = x + 1;
       return x * y;
     });
-    
+
     // good
     [1, 2, 3].map((x) => {
       const y = x + 1;
@@ -1509,7 +1509,7 @@ fast.';
 ```javascript
     // bad
     export function foo() {}
-    
+
 // good
     export default function foo() {}
 ```
@@ -2032,7 +2032,7 @@ fast.';
       console.log(anonymous); // => undefined
 
       anonymous(); // => TypeError anonymous is not a function
-	
+
       // 译者注，不管后面是函数、数字还是字符串，都是一样的，总结就是实际代码中最好不要用 var。
       var anonymous = function () {
         console.log('anonymous function expression');
@@ -2218,17 +2218,17 @@ fast.';
     const foo = maybe1 > maybe2
       ? "bar"
       : value1 > value2 ? "baz" : null;
-    
+
     // better
 const maybeNull = value1 > value2 ? 'baz' : null;
-    
+
     const foo = maybe1 > maybe2
     ? 'bar'
       : maybeNull;
-    
+
     // best
 const maybeNull = value1 > value2 ? 'baz' : null;
-    
+
     const foo = maybe1 > maybe2 ? 'bar' : maybeNull;
     ```
 ```
@@ -2242,7 +2242,7 @@ const maybeNull = value1 > value2 ? 'baz' : null;
     const foo = a ? a : b;
     const bar = c ? true : false;
     const baz = c ? false : true;
-    
+
     // good
 const foo = a || b;
     const bar = !!c;
@@ -2998,10 +2998,10 @@ class Person {
     ```javascript
     // bad
     const foo = jsonData && jsonData.foo && jsonData.foo.bar && jsonData.foo.bar.baz && jsonData.foo.bar.baz.quux && jsonData.foo.bar.baz.quux.xyzzy;
-    
+
     // bad
     $.ajax({ method: 'POST', url: 'https://airbnb.com/', data: { name: 'John' } }).done(() => console.log('Congratulations!')).fail(() => console.log('You have failed this city.'));
-    
+
     // good
     const foo = jsonData
       && jsonData.foo
@@ -3009,7 +3009,7 @@ class Person {
       && jsonData.foo.bar.baz
       && jsonData.foo.bar.baz.quux
       && jsonData.foo.bar.baz.quux.xyzzy;
-    
+
     // good
     $.ajax({
       method: 'POST',
@@ -3054,14 +3054,14 @@ class Person {
   - [19.16](#whitespace--computed-property-spacing) 计算属性内要空格。参考上述花括号和中括号的规则。  eslint: [`computed-property-spacing`](https://eslint.org/docs/rules/computed-property-spacing)
 
     译者注：原文可能有误，说明和代码不一致，以代码为准。
-    
+
     ```javascript
     // bad
     obj[foo ]
     obj[ 'foo']
 var x = {[ b ]: a}
     obj[foo[ bar ]]
-    
+
     // good
     obj[foo]
     obj['foo']
@@ -3358,22 +3358,22 @@ function foo() {
 
     ```javascript
 const inputValue = '4';
-    
+
     // bad
 const val = new Number(inputValue);
-    
+
     // bad
 const val = +inputValue;
-    
+
     // bad
 const val = inputValue >> 0;
-    
+
     // bad
 const val = parseInt(inputValue);
-    
+
     // good
     const val = Number(inputValue);
-    
+
     // good
     const val = parseInt(inputValue, 10);
     ```
@@ -3630,43 +3630,43 @@ const val = parseInt(inputValue);
   <a name="23.10"></a>
   <a name="naming--uppercase"></a>
   - [23.10](#naming--uppercase) 你可以用全大写字母设置静态变量，他需要满足三个条件。
-    
+
     1. 导出变量；
     1. 是 `const` 定义的， 保证不能被改变；
 1. 这个变量是可信的，他的子属性都是不能被改变的。
-   
+
     > 为什么？这是一个附加工具，帮助开发者去辨识一个变量是不是不可变的。UPPERCASE_VARIABLES 能让开发者知道他能确信这个变量（以及他的属性）是不会变的。
-    
+
     - 对于所有的 `const` 变量呢？ —— 这个是不必要的。大写变量不应该在同一个文件里定义并使用， 它只能用来作为导出变量。
 - 那导出的对象呢？ —— 大写变量处在 `export` 的最高级(例如：`EXPORTED_OBJECT.key`) 并且他包含的所有子属性都是不可变的。（译者注：即导出的变量是全大写的，但他的属性不用大写）
-  
+
     ```javascript
     // bad
 const PRIVATE_VARIABLE = 'should not be unnecessarily uppercased within a file';
-    
+
     // bad
 export const THING_TO_BE_CHANGED = 'should obviously not be uppercased';
-    
+
     // bad
 export let REASSIGNABLE_VARIABLE = 'do not use let with uppercase variables';
-    
+
     ```
 
 // ---
-    
+
     // 允许但不够语义化
 export const apiKey = 'SOMEKEY';
-    
+
     // 在大多数情况下更好
 export const API_KEY = 'SOMEKEY';
-    
+
 // ---
-    
+
     // bad - 不必要的大写键，没有增加任何语义
     export const MAPPING = {
       KEY: 'value'
 };
-    
+
     // good
     export const MAPPING = {
       key: 'value'
