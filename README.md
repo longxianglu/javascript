@@ -674,7 +674,7 @@ fast.';
   <a name="6.4"></a>
   <a name="strings--eval"></a>
 
-  - [6.4](#strings--eval) 永远使用 `eval()`，该方法有太多漏洞。eslint: [`no-eval`](https://eslint.org/docs/rules/no-eval)
+  - [6.4](#strings--eval) 永远不要使用 `eval()`，该方法有太多漏洞。eslint: [`no-eval`](https://eslint.org/docs/rules/no-eval)
 
   <a name="6.5"></a>
   <a name="strings--escaping"></a>
@@ -3373,7 +3373,7 @@ const val = parseInt(inputValue);
 
     // good
     const val = Number(inputValue);
-
+    
     // good
     const val = parseInt(inputValue, 10);
     ```
