@@ -60,10 +60,9 @@
   18. [Amendments](#amendments)
 
 ## 项目-目录-文件命名规范
-  <a name="0.1"></a>
-  <a name="accessors--not-required"></a>
-   <a name="naming--uppercase"></a>
-   - [0.10](#naming--uppercase) 统一采用小写字母，多个字母之间用中划线分隔，比如 项目（ant-design-pro、ave-vre）、目录（async-modules）、文件(scens-toolkits.js)
+  <a name="0.0"></a>
+  <a name="dir-name"></a>
+   - [0.0](#dir-name) 统一采用小写字母，多个字母之间用中划线分隔，比如 项目（ant-design-pro、ave-vre）、目录（async-modules）、文件(scens-toolkits.js)
 
 ## 类型
 
