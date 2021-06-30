@@ -42,22 +42,23 @@
   1. [分号](#分号)
   1. [类型转换与强制转换](#类型转换与强制转换)
   1. [命名规范](#命名规范)
-  1. [Get-Set 访问器](#get-set-访问器)
-  1. [事件](#事件)
-  1. [jQuery](#jquery)
-  1. [ECMAScript 5 兼容性](#ecmascript-5-兼容性)
-  1. [ECMAScript 6+ (ES 2015+) 风格](#ecmascript-6-es-2015-风格)
-  1. [标准库](#标准库)
-  1. [测试](#测试)
-  1. [性能](#性能)
-  1. [资源](#资源)
-  1. [In the Wild](#in-the-wild)
-  1. [Translation](#translation)
-  1. [The JavaScript Style Guide Guide](#the-javascript-style-guide-guide)
-  1. [Chat With Us About JavaScript](#chat-with-us-about-javascript)
-  1. [Contributors](#contributors)
-  1. [License](#license)
-  1. [Amendments](#amendments)
+  2. [项目-目录-文件命名规范](#项目-目录-文件命名规范)
+  3. [Get-Set 访问器](#get-set-访问器)
+  4. [事件](#事件)
+  5. [jQuery](#jquery)
+  6. [ECMAScript 5 兼容性](#ecmascript-5-兼容性)
+  7. [ECMAScript 6+ (ES 2015+) 风格](#ecmascript-6-es-2015-风格)
+  8. [标准库](#标准库)
+  9. [测试](#测试)
+  10. [性能](#性能)
+  11. [资源](#资源)
+  12. [In the Wild](#in-the-wild)
+  13. [Translation](#translation)
+  14. [The JavaScript Style Guide Guide](#the-javascript-style-guide-guide)
+  15. [Chat With Us About JavaScript](#chat-with-us-about-javascript)
+  16. [Contributors](#contributors)
+  17. [License](#license)
+  18. [Amendments](#amendments)
 
 ## 类型
 
@@ -3675,6 +3676,7 @@ export const API_KEY = 'SOMEKEY';
 
 **[⬆ 返回顶部](#目录)**
 
+## 项目-目录-文件命名规范
 
 ## Get-Set 访问器
 
