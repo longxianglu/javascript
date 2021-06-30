@@ -18,7 +18,7 @@
  - [Ruby](https://github.com/airbnb/ruby)
 
 ## 目录
-
+  1. [项目-目录-文件命名规范](#项目-目录-文件命名规范)
   1. [类型](#类型)
   1. [引用](#引用)
   1. [对象](#对象)
@@ -42,7 +42,6 @@
   1. [分号](#分号)
   1. [类型转换与强制转换](#类型转换与强制转换)
   1. [命名规范](#命名规范)
-  2. [项目-目录-文件命名规范](#项目-目录-文件命名规范)
   3. [Get-Set 访问器](#get-set-访问器)
   4. [事件](#事件)
   5. [jQuery](#jquery)
@@ -59,6 +58,12 @@
   16. [Contributors](#contributors)
   17. [License](#license)
   18. [Amendments](#amendments)
+
+## 项目-目录-文件命名规范
+  <a name="0.1"></a>
+  <a name="accessors--not-required"></a>
+   <a name="naming--uppercase"></a>
+   - [0.10](#naming--uppercase) 统一采用小写字母，多个字母之间用中划线分隔，比如 项目（ant-design-pro、ave-vre）、目录（async-modules）、文件(scens-toolkits.js)
 
 ## 类型
 
@@ -3676,7 +3681,7 @@ export const API_KEY = 'SOMEKEY';
 
 **[⬆ 返回顶部](#目录)**
 
-## 项目-目录-文件命名规范
+
 
 ## Get-Set 访问器
 
